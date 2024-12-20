@@ -1,0 +1,109 @@
+#welcomePrompt {
+    position: fixed;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url("bg.jpg");
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7); /* Inner shadow for overlay */
+  }
+  
+  .prompt {
+    width: 70vw;
+    height: 70vh;
+    background: black;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.15); /* Outer shadow */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    border: 2px dotted  rgb(107, 6, 6);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow for button */
+  }
+  
+
+  .intro-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #aed0d0;
+    color: #156d7a;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+  }
+  
+  .intro-btn:hover {
+    background: #d4f0f0;
+    color: #093f47;
+
+  }
+  
+#prompt-jarvis-img{
+  height: 170px;
+  width: 150px;
+}
+
+#imageElement{
+    height: 120px;
+  
+}
+
+#propmt-para
+{
+  font-size: 12px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ display: none;
+}
+
+
+#proceed-btn
+{
+  display: none;
+  text-align: center;
+  background: transparent;
+  color: rgb(107, 6, 6);
+  font-weight: bolder;
+  cursor: pointer;
+  border: none;
+}
+#proceed-btn:hover
+{
+  color: red;
+
+  
+  #s{
+      color: purple;
+  }
+}
+
+#discPara
+{
+  text-align: start;
+  font-size: small;
+  padding: 20px;
+  #d
+  {
+      color: rgb(182, 182, 0);
+  }
+}

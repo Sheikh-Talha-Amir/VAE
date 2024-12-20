@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="prompt..css">
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    
+  </head>
+  <body >
+
+<!-- Prompt -->
+
+
+
+<div id="welcomePrompt" style="display: flex;">
+  <div class="prompt">
+    <button class="close-btn" onclick="closePrompt()">×</button>
+    <img src="jp2.png" alt="" id="prompt-jarvis-img">
+    <h2>Welcome to Skynet Jarvis Voice Assistant</h2>
+    <p>Your personalized assistant is ready to assist you!</p>
+    <button class="intro-btn" onclick="playIntroductionAndShowImage(),showProceedBtn(),removeDisc(),retainPrompPara()">Start Jarvis!</button>
+    <div id="introImage" style="display: none; margin-top: 20px;">
+      <img src="" alt="Introduction Image" id="imageElement" style="width: 200px; max-width: 400px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);" />
+    </div>
+
+    <div>
+      <p id="propmt-para">
+
+        Introducing  <b> Jarvis </b> (Skynet), an innovative voice assistant engineered to streamline daily activities through intuitive automation and intelligent interaction. Developed with advanced JavaScript techniques, Jarvis seamlessly combines voice recognition, natural language processing, and customizable commands to offer a tailored user experience.
+      </p>
+      <button onclick="closePrompt()" id="proceed-btn">Click Here to proceed to <b id="s"> Skynet </b></button>
+    </div>
+
+    <div class="disclaimer">
+      <p id="discPara"><b id="d">Disclaimer:</b> While this voice assistant is officially named Skynet, it is commonly referred to as Jarvis, drawing inspiration from the AI character in popular culture. However, to maintain accuracy and respect its true identity, it is recommended to address the assistant by its official name, Skynet.</p>
+    </div>
+
+  </div>
+</div>
+<!-- -------------------------------- -->
+<!-- Main Content -->
+
+
+ <!-- Your main project -->
+ <div id="mainProject" style="display: none;">
+  <!-- Main project content here -->
+
+  <section class="main">
+
+    <div id="lifeline-quote-div">
+    
+    <dotlottie-player src="https://lottie.host/db2f2e9d-615d-473e-83b4-9dc8990e8032/mNR0sgcKoT.lottie" background="transparent" speed="1" style="width: 300px; height: 100px" loop autoplay></dotlottie-player>
+    
+    <p id="quote">
+        <b><i>"The advance of technology is based on making it fit in so that you don’t really even notice it, so it’s part of everyday life."</i><br><br>~ <b style="color: #d4a200;">Bill Gates</b></b>
+    </p>
+    </div>
+    
+      <div class="image-container">
+          <div class="image">
+              <img id="heart" src="heart.gif" alt="image" style="cursor: pointer;">
+          </div>
+          <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;"><span style="color:#514679;font-family: Georgia, 'Times New Roman', Times, serif;" >S K Y </span> &nbsp;N E T</h1>
+          <p>I'm a Virtual Voice Assistant how can i help you</p>
+          <div >
+            <p id="jarvis-intro">Introducing <b> Jarvis </b>(Skynet), an advanced Voice assistant designed to revolutionize everyday tasks with seamless automation and intelligent interactions. Developed using cutting-edge JavaScript programming, Jarvis integrates voice recognition, natural language processing, and custom commands to deliver a highly personalized user experience. With features like real-time responses, task management, and system control, Jarvis is your smart companion for enhanced productivity. Built with a focus on innovation and efficiency, this project showcases expertise in Web-driven development, making it a standout addition to modern technological solutions
+          </div>
+      </div>
+      <div class="input" style="cursor: pointer;" onclick="start()">
+          <button class="talk" onclick="start()"><i class="fas fa-microphone-alt" style="color: brown;"></i></button>
+          <h1 class="content"> Click here to speak</h1>
+      </div>
+    </section>
+    
+    <footer>
+      <p id="footer-content">&copy; Copyright 2024 | All Rights Reserved | Designed and Developed by  <b style="font-family: 'Times New Roman', Times, serif;">Talha Sh, Shahzaib, Hasan Riaz and Zunnorain Asghar </b> ❤️ </p>
+    </footer>
+    
+</div>
+
+
+
+<!--  Js for heart audio -->
+<script>
+  
+const imageHeart = document.getElementById('heart');
+
+
+const heartAudio = new Audio('JarvisIntro.mp3');
+
+
+imageHeart.addEventListener('click', () => {
+
+    heartAudio.play().catch((error) => {
+        console.error('Audio playback failed:', error);
+    });
+});
+
+</script>
+
+<!-- Javascript for Prompt -->
+<script src="prompt.js.js"></script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
